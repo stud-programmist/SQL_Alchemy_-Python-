@@ -24,7 +24,6 @@ def get_session_engine(db_uri):
     engine = create_engine(db_uri, echo=True)
     #session = scoped_session(sessionmaker(bind=engine))
     sess = scoped_session(sessionmaker(bind=engine))
-    #engine = create_engine("postgresql+psycopg2://Shupta_EA:20studShEA22@localhost:5432/liv_cooper")
     return sess, engine
 
 
